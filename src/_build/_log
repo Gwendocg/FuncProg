@@ -1,0 +1,179 @@
+### Starting build.
+# Target: main.ml.depends, tags: { extension:ml, file:main.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules main.ml > main.ml.depends
+# Target: defunct.mli.depends, tags: { extension:mli, file:defunct.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules defunct.mli > defunct.mli.depends
+# Target: terms.ml.depends, tags: { extension:ml, file:terms.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules terms.ml > terms.ml.depends
+# Target: pllib/atom.mli.depends, tags: { extension:mli, file:pllib/atom.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/atom.mli > pllib/atom.mli.depends
+# Target: pllib/identifier.mli.depends, tags: { extension:mli, file:pllib/identifier.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/identifier.mli > pllib/identifier.mli.depends
+# Target: pllib/identifier.cmi, tags: { byte, compile, extension:mli, file:pllib/identifier.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/identifier.cmi pllib/identifier.mli
+# Target: pllib/error.mli.depends, tags: { extension:mli, file:pllib/error.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/error.mli > pllib/error.mli.depends
+# Target: pllib/atom.cmi, tags: { byte, compile, extension:mli, file:pllib/atom.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/atom.cmi pllib/atom.mli
+# Target: types.mli.depends, tags: { extension:mli, file:types.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules types.mli > types.mli.depends
+# Target: pllib/error.cmi, tags: { byte, compile, extension:mli, file:pllib/error.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/error.cmi pllib/error.mli
+# Target: types.cmi, tags: { byte, compile, extension:mli, file:types.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o types.cmi types.mli
+# Target: terms.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:terms.cmo, file:terms.ml, implem, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o terms.cmo terms.ml
+# Target: internalize.mli.depends, tags: { extension:mli, file:internalize.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules internalize.mli > internalize.mli.depends
+# Target: syntax.ml.depends, tags: { extension:ml, file:syntax.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules syntax.ml > syntax.ml.depends
+# Target: syntax.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:syntax.cmo, file:syntax.ml, implem, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o syntax.cmo syntax.ml
+# Target: lexer.mll, tags: { extension:mll, file:lexer.mll, lexer, ocaml, ocamllex, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamllex.opt -q lexer.mll
+# Target: lexer.ml.depends, tags: { extension:ml, file:lexer.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules lexer.ml > lexer.ml.depends
+# Target: pllib/lexerUtil.mli.depends, tags: { extension:mli, file:pllib/lexerUtil.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/lexerUtil.mli > pllib/lexerUtil.mli.depends
+# Target: parser.mly.depends, tags: { extension:mly, file:parser.mly, infer, menhir_ocamldep, ocaml, ocamldep, quiet, traverse }
+menhir --raw-depend --ocamldep '/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules' parser.mly > parser.mly.depends
+# Target: parser.mly, tags: { byte, compile, extension:ml, extension:mly, file:parser.ml, file:parser.mly, infer, menhir, ocaml, parser, quiet, traverse }
+menhir --ocamlc '/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -g -I pllib' --explain --infer parser.mly
+# Target: parser.mli.depends, tags: { extension:mli, file:parser.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules parser.mli > parser.mli.depends
+# Target: pllib/lexerUtil.cmi, tags: { byte, compile, extension:mli, file:pllib/lexerUtil.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/lexerUtil.cmi pllib/lexerUtil.mli
+# Target: parser.cmi, tags: { byte, compile, extension:mli, file:parser.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o parser.cmi parser.mli
+# Target: print.mli.depends, tags: { extension:mli, file:print.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules print.mli > print.mli.depends
+# Target: equations.mli.depends, tags: { extension:mli, file:equations.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules equations.mli > equations.mli.depends
+# Target: pllib/export.mli.depends, tags: { extension:mli, file:pllib/export.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/export.mli > pllib/export.mli.depends
+# Target: equations.cmi, tags: { byte, compile, extension:mli, file:equations.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o equations.cmi equations.mli
+# Target: pllib/export.cmi, tags: { byte, compile, extension:mli, file:pllib/export.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/export.cmi pllib/export.mli
+# Target: typecheck.mli.depends, tags: { extension:mli, file:typecheck.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules typecheck.mli > typecheck.mli.depends
+# Target: defunct.cmi, tags: { byte, compile, extension:mli, file:defunct.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o defunct.cmi defunct.mli
+# Target: internalize.cmi, tags: { byte, compile, extension:mli, file:internalize.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o internalize.cmi internalize.mli
+# Target: lexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:lexer.cmo, file:lexer.ml, implem, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o lexer.cmo lexer.ml
+# Target: print.cmi, tags: { byte, compile, extension:mli, file:print.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o print.cmi print.mli
+# Target: typecheck.cmi, tags: { byte, compile, extension:mli, file:typecheck.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o typecheck.cmi typecheck.mli
+# Target: main.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o main.cmo main.ml
+# Target: defunct.ml.depends, tags: { extension:ml, file:defunct.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules defunct.ml > defunct.ml.depends
+# Target: pllib/atom.ml.depends, tags: { extension:ml, file:pllib/atom.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/atom.ml > pllib/atom.ml.depends
+# Target: pllib/identifier.ml.depends, tags: { extension:ml, file:pllib/identifier.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/identifier.ml > pllib/identifier.ml.depends
+# Target: pllib/identifierChop.mll, tags: { extension:mll, file:pllib/identifierChop.mll, lexer, ocaml, ocamllex, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamllex.opt -q pllib/identifierChop.mll
+# Target: pllib/identifierChop.ml.depends, tags: { extension:ml, file:pllib/identifierChop.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/identifierChop.ml > pllib/identifierChop.ml.depends
+# Target: pllib/identifierChop.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:pllib/identifierChop.cmo, file:pllib/identifierChop.ml, implem, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/identifierChop.cmo pllib/identifierChop.ml
+# Target: pllib/identifierChop.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/identifierChop.cmx, file:pllib/identifierChop.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/identifierChop.cmx pllib/identifierChop.ml
+# Target: pllib/identifier.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/identifier.cmx, file:pllib/identifier.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/identifier.cmx pllib/identifier.ml
+# Target: pllib/error.ml.depends, tags: { extension:ml, file:pllib/error.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/error.ml > pllib/error.ml.depends
+# Target: pllib/atom.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/atom.cmx, file:pllib/atom.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/atom.cmx pllib/atom.ml
+# Target: types.ml.depends, tags: { extension:ml, file:types.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules types.ml > types.ml.depends
+# Target: pllib/error.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/error.cmx, file:pllib/error.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/error.cmx pllib/error.ml
+# Target: types.cmx, tags: { compile, extension:cmx, extension:ml, file:types.cmx, file:types.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o types.cmx types.ml
+# Target: terms.cmx, tags: { compile, extension:cmx, extension:ml, file:terms.cmx, file:terms.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o terms.cmx terms.ml
+# Target: internalize.ml.depends, tags: { extension:ml, file:internalize.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules internalize.ml > internalize.ml.depends
+# Target: pllib/import.ml.depends, tags: { extension:ml, file:pllib/import.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/import.ml > pllib/import.ml.depends
+# Target: pllib/import.mli.depends, tags: { extension:mli, file:pllib/import.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/import.mli > pllib/import.mli.depends
+# Target: pllib/import.cmi, tags: { byte, compile, extension:mli, file:pllib/import.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pllib/import.cmi pllib/import.mli
+# Target: pllib/import.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/import.cmx, file:pllib/import.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/import.cmx pllib/import.ml
+# Target: syntax.cmx, tags: { compile, extension:cmx, extension:ml, file:syntax.cmx, file:syntax.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o syntax.cmx syntax.ml
+# Target: pllib/lexerUtil.ml.depends, tags: { extension:ml, file:pllib/lexerUtil.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/lexerUtil.ml > pllib/lexerUtil.ml.depends
+# Target: parser.ml.depends, tags: { extension:ml, file:parser.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules parser.ml > parser.ml.depends
+# Target: pllib/lexerUtil.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/lexerUtil.cmx, file:pllib/lexerUtil.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/lexerUtil.cmx pllib/lexerUtil.ml
+# Target: parser.cmx, tags: { compile, extension:cmx, extension:ml, file:parser.cmx, file:parser.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o parser.cmx parser.ml
+# Target: print.ml.depends, tags: { extension:ml, file:print.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules print.ml > print.ml.depends
+# Target: pllib/export.ml.depends, tags: { extension:ml, file:pllib/export.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pllib/export.ml > pllib/export.ml.depends
+# Target: pprint.ml.depends, tags: { extension:ml, file:pprint.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pprint.ml > pprint.ml.depends
+# Target: pprint.mli.depends, tags: { extension:mli, file:pprint.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules pprint.mli > pprint.mli.depends
+# Target: pprint.cmi, tags: { byte, compile, extension:mli, file:pprint.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o pprint.cmi pprint.mli
+# Target: symbols.ml.depends, tags: { extension:ml, file:symbols.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules symbols.ml > symbols.ml.depends
+# Target: symbols.mli.depends, tags: { extension:mli, file:symbols.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules symbols.mli > symbols.mli.depends
+# Target: symbols.cmi, tags: { byte, compile, extension:mli, file:symbols.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o symbols.cmi symbols.mli
+# Target: equations.ml.depends, tags: { extension:ml, file:equations.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules equations.ml > equations.ml.depends
+# Target: unionFind.ml.depends, tags: { extension:ml, file:unionFind.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules unionFind.ml > unionFind.ml.depends
+# Target: unionFind.mli.depends, tags: { extension:mli, file:unionFind.mli, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules unionFind.mli > unionFind.mli.depends
+# Target: unionFind.cmi, tags: { byte, compile, extension:mli, file:unionFind.mli, interf, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o unionFind.cmi unionFind.mli
+# Target: unionFind.cmx, tags: { compile, extension:cmx, extension:ml, file:unionFind.cmx, file:unionFind.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o unionFind.cmx unionFind.ml
+# Target: pllib/export.cmx, tags: { compile, extension:cmx, extension:ml, file:pllib/export.cmx, file:pllib/export.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pllib/export.cmx pllib/export.ml
+# Target: pprint.cmx, tags: { compile, extension:cmx, extension:ml, file:pprint.cmx, file:pprint.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o pprint.cmx pprint.ml
+# Target: symbols.cmx, tags: { compile, extension:cmx, extension:ml, file:symbols.cmx, file:symbols.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o symbols.cmx symbols.ml
+# Target: equations.cmx, tags: { compile, extension:cmx, extension:ml, file:equations.cmx, file:equations.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o equations.cmx equations.ml
+# Target: typecheck.ml.depends, tags: { extension:ml, file:typecheck.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules typecheck.ml > typecheck.ml.depends
+# Target: print.cmx, tags: { compile, extension:cmx, extension:ml, file:print.cmx, file:print.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o print.cmx print.ml
+# Target: typerr.ml.depends, tags: { extension:ml, file:typerr.ml, ocaml, ocamldep, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamldep.opt -modules typerr.ml > typerr.ml.depends
+# Target: typerr.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:typerr.cmo, file:typerr.ml, implem, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlc.opt -c -g -I pllib -o typerr.cmo typerr.ml
+# Target: typerr.cmx, tags: { compile, extension:cmx, extension:ml, file:typerr.cmx, file:typerr.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o typerr.cmx typerr.ml
+# Target: defunct.cmx, tags: { compile, extension:cmx, extension:ml, file:defunct.cmx, file:defunct.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o defunct.cmx defunct.ml
+# Target: internalize.cmx, tags: { compile, extension:cmx, extension:ml, file:internalize.cmx, file:internalize.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o internalize.cmx internalize.ml
+# Target: lexer.cmx, tags: { compile, extension:cmx, extension:ml, file:lexer.cmx, file:lexer.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o lexer.cmx lexer.ml
+# Target: typecheck.cmx, tags: { compile, extension:cmx, extension:ml, file:typecheck.cmx, file:typecheck.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o typecheck.cmx typecheck.ml
++ /home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o typecheck.cmx typecheck.ml
+File "typecheck.ml", line 103, characters 10-18:
+Warning 26: unused variable inferred.
+# Target: main.cmx, tags: { compile, extension:cmx, extension:ml, file:main.cmx, file:main.ml, implem, native, ocaml, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -c -g -I pllib -o main.cmx main.ml
+# Target: main.native, tags: { dont_link_with, extension:native, file:main.native, link, native, ocaml, program, quiet, traverse }
+/home/gwendoline/.opam/4.02.3/bin/ocamlopt.opt -g pllib/identifierChop.cmx pllib/identifier.cmx pllib/atom.cmx pllib/error.cmx types.cmx terms.cmx defunct.cmx unionFind.cmx equations.cmx pllib/import.cmx syntax.cmx internalize.cmx parser.cmx pllib/lexerUtil.cmx lexer.cmx pllib/export.cmx pprint.cmx symbols.cmx print.cmx typerr.cmx typecheck.cmx main.cmx -o main.native
+# Compilation successful.
